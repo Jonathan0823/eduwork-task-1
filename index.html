@@ -1,94 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+      td,
+      th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
 
-    td,
-    th {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
+      .menu {
+        background: #f8f8f8;
+        justify-content: space-between;
+        display: flex;
+      }
 
-    .menu {
-      background: #f8f8f8;
-      justify-content: space-between;
-      display: flex;
-    }
+      .header-content {
+        text-align: left;
+      }
 
-    .header-content {
-      text-align: left;
-    }
+      .bio-table td {
+        width: 33.33%;
+      }
+    </style>
+  </head>
 
-    .bio-table td {
-      width: 33.33%;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Section 1: Menu -->
+    <div class="menu">
+      <h2>Brand</h2>
 
-<body>
-  <!-- Section 1: Menu -->
-  <div class="menu">
-    <h2>Brand</h2>
-
-    <div>
-      <a href="#">Header</a>
-      <a href="#">Biodata</a>
-      <a href="#">Portfolio</a>
+      <div>
+        <a href="#">Header</a>
+        <a href="#">Biodata</a>
+        <a href="#">Portfolio</a>
+      </div>
     </div>
 
-  </div>
+    <!-- Section 2: Header dengan gambar -->
+    <table>
+      <tr>
+        <td class="header-content">
+          <h2>Selamat Datang di Website Saya</h2>
+          <div>
+            <p>
+              Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks
+              seperti ini.
+            </p>
+          </div>
+          <a href="#">Pelajari Lebih Lanjut</a>
+        </td>
+        <td>
+          <img src="https://via.placeholder.com/600x400" alt="Header Image" />
+        </td>
+      </tr>
+    </table>
 
-  <!-- Section 2: Header dengan gambar -->
-  <table>
-    <tr>
-      <td class="header-content">
-        <h2>Selamat Datang di Website Saya</h2>
-        <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-        <a href="#">Pelajari Lebih Lanjut</a>
-      </td>
-      <td>
-        <img src="https://via.placeholder.com/600x400" alt="Header Image">
-      </td>
-    </tr>
-  </table>
+    <!-- Section 3: Biodata -->
+    <h2>About Me</h2>
+    <p>A brief introduction about myself</p>
+    <table class="bio-table">
+      <tr>
+        <td>Full Name</td>
+        <td>Education</td>
+        <td>Pekerjaan</td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td>Hobi</td>
+        <td>Alamat</td>
+      </tr>
+    </table>
 
-  <!-- Section 3: Biodata -->
-  <h2>About Me</h2>
-  <p>A brief introduction about myself</p>
-  <table class="bio-table">
-    <tr>
-      <td>Full Name</td>
-      <td>Education</td>
-      <td>Pekerjaan</td>
-    </tr>
-    <tr>
-      <td>Contact</td>
-      <td>Hobi</td>
-      <td>Alamat</td>
-    </tr>
-  </table>
-
-  <!-- Section 4: Portofolio -->
-  <h2>Portofolio</h2>
-  <table>
-    <tr>
-      <td><img src="https://via.placeholder.com/350x200" alt="Proyek 1"><br><strong>Proyek 1</strong><br>Deskripsi
-        proyek 1.</td>
-      <td><img src="https://via.placeholder.com/350x200" alt="Proyek 2"><br><strong>Proyek 2</strong><br>Deskripsi
-        proyek 2.</td>
-      <td><img src="https://via.placeholder.com/350x200" alt="Proyek 3"><br><strong>Proyek 3</strong><br>Deskripsi
-        proyek 3.</td>
-    </tr>
-  </table>
-</body>
-
+    <!-- Section 4: Portofolio -->
+    <h2>Portofolio</h2>
+    <table>
+      <tr>
+        <td>
+          <img
+            src="https://via.placeholder.com/350x200"
+            alt="Proyek 1"
+          /><br /><strong>Proyek 1</strong><br />Deskripsi proyek 1.
+        </td>
+        <td>
+          <img
+            src="https://via.placeholder.com/350x200"
+            alt="Proyek 2"
+          /><br /><strong>Proyek 2</strong><br />Deskripsi proyek 2.
+        </td>
+        <td>
+          <img
+            src="https://via.placeholder.com/350x200"
+            alt="Proyek 3"
+          /><br /><strong>Proyek 3</strong><br />Deskripsi proyek 3.
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
